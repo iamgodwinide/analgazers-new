@@ -25,7 +25,7 @@ const enterFunc = () => {
     document.querySelector("body").style.overflowY = "scroll";
     fart.play(sounds[1])
     window.scrollTo({
-        top: window.innerHeight,
+        top: window.innerHeight + 200,
         behavior: "smooth"
     });
 }
