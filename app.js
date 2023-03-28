@@ -28,13 +28,8 @@ const enterFunc = () => {
         top: window.innerHeight,
         behavior: "smooth"
     });
-   
 }
 
 window.onload = () => {
-    window.scrollTo({
-        top: window.innerHeight/3,
-        behavior: "smooth"
-    });
     document.querySelector(".preload-wrap").style.display = "none";
 }
