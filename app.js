@@ -31,5 +31,9 @@ const enterFunc = () => {
 }
 
 window.onload = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
     document.querySelector(".preload-wrap").style.display = "none";
 }
