@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="./cursor.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="ANALGAZERS WEBSITE"
+    />
+    <link rel="apple-touch-icon" href="./cursor.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>ANALGAZERS</title>
+</head>
+<body>
+
+    <nav>
+        <a  href="#">
+            <i class="fab fa-twitter"></i>
+        </a>
+    </nav>
+
+    <img class="bgmap" src="./1-site.png" usemap="#bgmap1" />
+    <map name="bgmap1">
+        <area title="Click To Enter" coords="944,497,1231,826" shape="rect" onclick="enterFunc()" />
+    </map>
+
+    <img class="bgmap" src="./2-site.png" id="bgmap" usemap="#bgmap2" />
+    <map name="bgmap2">
+        <area target="" alt="" title="" coords="158,235,465,542" shape="rect" onclick="playFart()"/>
+        <area target="" alt="" title="" coords="1390,465,1695,760" shape="rect" onclick="playFart()"/>
+        <area target="" alt="" title="" coords="238,1325,555,1691" shape="rect" onclick="playFart()"/>
+        <area target="" alt="" title="" coords="1410,1251,1726,1554" shape="rect" onclick="playFart()"/>
+        <area target="" alt="" title="" coords="420,2516,883,2806" shape="rect" onclick="playFart()"/>
+        <area target="" alt="" title="" coords="1120,2498,1380,2693" shape="rect" onclick="playFart()"/>
+        <area target="" alt="" title="" coords="1512,2372,1797,2613" shape="rect" onclick="playFart()"/>
+        <area target="" alt="" title="" coords="1027,3742,708,3489" shape="rect" onclick="playFart()"/>
+        <area target="" alt="" title="" coords="932,4687,1318,5047" shape="rect" onclick="playFart()"/>
+        <area target="" alt="" title="" coords="160,4654,501,4949" shape="rect" onclick="playFart()"/>
+        <area target="" alt="" title="" coords="1410,4608,1812,4859" shape="rect" onclick="playFart()"/>
+    </map>
+
+    <div class='preload-wrap'>
+        <img src="./cursor.png"/>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
+    <script src="./fart.min.js"></script>
+    <script src="./rwdImageMaps.js"></script>
+    <script>
+        $(document).ready(function(e) {
+            $('img[usemap]').rwdImageMaps();
+        });
+    </script>
+    <script src="./app.js"></script>
+</body>
+</html>
+
+
