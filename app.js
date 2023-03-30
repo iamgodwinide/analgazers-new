@@ -45,5 +45,5 @@ window.onload = () => {
    setTimeout(()=> {
     document.querySelector("body").style.overflowY = "hidden";
     document.querySelector(".preload-wrap").style.display = "none";
-   },100)
+   },300)
 }
