@@ -23,25 +23,32 @@
         </a>
     </nav>
 
-    <img class="bgmap" src="./1-site.png" usemap="#bgmap1" />
-    <map name="bgmap1">
-        <area title="Click To Enter" coords="944,497,1231,826" shape="rect" onclick="enterFunc()" />
-    </map>
+    <div class="main">
 
-    <img class="bgmap" src="./2-site.png" id="bgmap" usemap="#bgmap2" />
-    <map name="bgmap2">
-        <area target="" alt="" title="" coords="158,235,465,542" shape="rect" onclick="playFart()"/>
-        <area target="" alt="" title="" coords="1390,465,1695,760" shape="rect" onclick="playFart()"/>
-        <area target="" alt="" title="" coords="238,1325,555,1691" shape="rect" onclick="playFart()"/>
-        <area target="" alt="" title="" coords="1410,1251,1726,1554" shape="rect" onclick="playFart()"/>
-        <area target="" alt="" title="" coords="420,2516,883,2806" shape="rect" onclick="playFart()"/>
-        <area target="" alt="" title="" coords="1120,2498,1380,2693" shape="rect" onclick="playFart()"/>
-        <area target="" alt="" title="" coords="1512,2372,1797,2613" shape="rect" onclick="playFart()"/>
-        <area target="" alt="" title="" coords="1027,3742,708,3489" shape="rect" onclick="playFart()"/>
-        <area target="" alt="" title="" coords="932,4687,1318,5047" shape="rect" onclick="playFart()"/>
-        <area target="" alt="" title="" coords="160,4654,501,4949" shape="rect" onclick="playFart()"/>
-        <area target="" alt="" title="" coords="1410,4608,1812,4859" shape="rect" onclick="playFart()"/>
-    </map>
+        <div class="home">
+            <img class="bgmap" src="./1-site.png" usemap="#bgmap1" />
+            <video src="./videos/Homepage.mp4" muted autoplay="true" loop></video>
+            <map name="bgmap1">
+                <area title="Click To Enter" coords="944,497,1231,826" shape="rect" onclick="enterFunc()" />
+            </map>
+        </div>
+
+        <div class="main">
+            <video src="./videos/Map.mp4" autoplay="true" muted loop></video>
+            <img class="bgmap" src="./2-site.png" id="bgmap" usemap="#bgmap2" />
+            <map name="bgmap2">
+                <area coords="118,195,620,651" shape="rect" onclick="playFart()">
+                <area coords="1175,379,1816,811" shape="rect" onclick="playFart()">
+                <area coords="161,1131,637,1774" shape="rect" onclick="playFart()">
+                <area coords="1343,1152,1778,1740" shape="rect" onclick="playFart()">
+                <area coords="403,2423,901,2838" shape="rect" onclick="playFart()">
+                <area coords="1010,2475,1384,2939" shape="rect" onclick="playFart()">
+                <area coords="1415,2206,1834,2748" shape="rect" onclick="playFart()">
+                <area coords="-1,4031,1915,5354" shape="rect" onclick="playFart()">
+            </map>
+        </div>
+        
+    </div>
 
     <div class='preload-wrap'>
         <img src="./cursor.png"/>
