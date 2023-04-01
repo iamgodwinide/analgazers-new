@@ -2,7 +2,7 @@ const fart = new Fart();
 const popupContainer = document.querySelector(".popup");
 const popupContent = document.querySelector(".popup .content");
 
-const audio = new Audio();
+let audio = new Audio();
 
 const sounds = [
     "toot",
@@ -112,7 +112,8 @@ const showpopup = async (num) => {
             }
           });
         audio.pause();
-        audio.src = `./sounds/New gazed${num+1}.mp3`;
+        audio = document.querySelectorAll("audio")[num];
+        console.log(audio);
         audio.play();
     }
 }
@@ -140,5 +141,5 @@ window.onload = () => {
     });
     document.querySelector("body").style.overflowY = "hidden";
     document.querySelector(".preload-wrap").style.display = "none";
-   },300)
+   },500)
 }
