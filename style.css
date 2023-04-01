@@ -5,7 +5,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  cursor: url('cursor1.png'), auto !important;
   background-color: #FFD4FF;
   overflow-y: hidden;
 }
@@ -25,19 +24,45 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 
-nav a {
+nav{
   position: fixed;
-  top: 1em;
-  right: 1em;
-  color: rgb(	29, 161, 242);
-  cursor: url('cursor1.png'), auto !important;
-  box-shadow: 2px 3px 5px #000;
-  border-radius: 50%;
-  padding: 10px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
 }
 
-nav a i{
-  font-size: 2em;
+nav a {
+  color: rgb(	29, 161, 242);
+  cursor: url('cursor1.png'), auto !important;
+}
+
+nav ul img {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  border: 2px solid #f0408c;
+  border-radius: 50%;
+}
+
+nav img.rect{
+  width: 100px;
+  height: 100px;
+  animation-name: scale;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-direction: alternate-reverse;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
 }
 
 .preload-wrap{
@@ -51,7 +76,7 @@ nav a i{
   justify-content: center;
   align-items: center;
   /* opacity: 0; */
-  z-index: 2;
+  z-index: 10000;
 }
 
 .preload-wrap img{
@@ -108,6 +133,10 @@ nav a i{
   opacity: 0;
 }
 
+area{
+  cursor: url('cursor1.png'), auto !important;
+}
+
 .popup{
   position: fixed;
   left: 0;
@@ -123,8 +152,8 @@ nav a i{
 
 .popup .content {
   position: relative;
-  background-color: #fff;
-  max-width: 300px;
+  background-color: #060606;
+  width: 400px;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -140,18 +169,13 @@ nav a i{
 }
 
 .popup .content p {
-  font-size: 20px;
-  color: #000;
+  font-family: cursive;
+  font-size: 25px;
+  color: #ffffff;
   margin-top: 2em;
 }
 
-.popup i{
-  font-size: 1.5em;
-  color: red;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
+
 
 
 @keyframes pop {
