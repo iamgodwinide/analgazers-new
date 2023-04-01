@@ -22,7 +22,7 @@ const sounds = [
 ];
 
 const speeds = [
-    40,
+    50,
     50,
     40,
     40,
