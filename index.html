@@ -37,24 +37,34 @@
             <video src="./videos/Map.mp4" preload="auto" autoplay="true" muted loop></video>
             <img class="bgmap" src="./2-site.png" id="bgmap" usemap="#bgmap2" />
             <map name="bgmap2">
-                <area coords="118,195,620,651" shape="rect" onclick="playFart()">
-                <area coords="1175,379,1816,811" shape="rect" onclick="playFart()">
-                <area coords="161,1131,637,1774" shape="rect" onclick="playFart()">
-                <area coords="1343,1152,1778,1740" shape="rect" onclick="playFart()">
-                <area coords="403,2423,901,2838" shape="rect" onclick="playFart()">
-                <area coords="1010,2475,1384,2939" shape="rect" onclick="playFart()">
-                <area coords="1415,2206,1834,2748" shape="rect" onclick="playFart()">
+                <area coords="118,195,620,651" shape="rect" onclick="playFart(0)">
+                <area coords="1175,379,1816,811" shape="rect" onclick="playFart(1)">
+                <area coords="161,1131,637,1774" shape="rect" onclick="playFart(2)">
+                <area coords="1343,1152,1778,1740" shape="rect" onclick="playFart(3)">
+                <area coords="403,2423,901,2838" shape="rect" onclick="playFart(4)">
+                <area coords="1010,2475,1384,2939" shape="rect" onclick="playFart(5)">
+                <area coords="1415,2206,1834,2748" shape="rect" onclick="playFart(6)">
                 <area coords="-1,4031,1915,5354" shape="rect" onclick="playFart()">
             </map>
         </div>
-        
+
+        <div class="popup">
+            <div class="content">
+                <i class="fas fa-close"></i>
+                <p>                   
+                </p>
+            </div>
+        </div>
+
     </div>
 
     <div class='preload-wrap'>
         <img src="./cursor.png"/>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" 
+        integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" 
+        crossorigin="anonymous"></script>
     <script src="./fart.min.js"></script>
     <script src="./rwdImageMaps.js"></script>
     <script>
