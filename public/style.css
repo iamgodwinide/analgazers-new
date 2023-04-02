@@ -141,6 +141,7 @@ nav ul{
   width: 100%;
   height: 100%;
   object-fit: fill;
+  z-index: 10;
 }
 
 .main .bgmap{
@@ -192,9 +193,6 @@ area{
   margin-top: 2em;
 }
 
-
-
-
 @keyframes pop {
   from{
     transform: scale(0);
@@ -213,9 +211,8 @@ area{
   }
 }
 
-
 @media screen and (max-width: 1024px) {
-  .home .bgmap2{
+  #bgmap{
     opacity: 1 !important;
   }
 }
