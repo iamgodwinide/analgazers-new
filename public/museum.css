@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #FFD4FF;
+  }
+  
+  body::-webkit-scrollbar {
+    width: 1em;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #ff006a79;
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: #f0408c;
+    outline: 1px solid slategrey;
+    border-radius: 10px;
+  }
+  
+  nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav a {
+    color: rgb(	29, 161, 242);
+    cursor: url('cursor1.png'), auto !important;
+  }
+
+  nav ul img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    padding: 5px;
+    border: 2px solid #f0408c;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  
+  nav img.rect{
+    width: 100px;
+    height: 100px;
+    animation-name: scale;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-direction: alternate-reverse;
+  }
+  
+  nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .preload-wrap{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* opacity: 0; */
+    z-index: 10000;
+  }
+  
+  .preload-wrap img{
+    width: 200px;
+    animation-name: scale;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: alternate-reverse;
+    /* opacity: 0; */
+    z-index: 2;
+  }
+  
+  .home{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+  }
+  
+  .home .bgmap{
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+  }
+  
+  area{
+    cursor: url('cursor1.png'), auto !important;
+    background-color: red;
+  }
+  
+  .popup{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 20;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #0000008c;
+  }
+  
+  .popup .content {
+    position: relative;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .popup .content-animate{
+    animation-name: pop;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+  }
+  
+  .popup .content img {
+    max-width: 700px;
+    max-height: 700px;
+  }
+  
+  @keyframes pop {
+    from{
+      transform: scale(0);
+    }
+    to{
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes scale {
+    from{
+      transform: scale(0.8);
+    }
+    to{
+      transform: scale(1);
+    }
+  }
+  
+
+  @media screen and (max-width: 1024px) {
+    nav ul img {
+      width: 20px;
+      height: 20px;
+      padding: 3px;
+    }
+  
+    nav img.rect{
+      width: 50px !important;
+      height: 50px !important;
+    }
+    .preload-wrap img{
+      width: 100px !important;
+    }
+
+    .home{
+      height: 60vh;
+    }
+  }
