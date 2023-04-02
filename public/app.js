@@ -142,3 +142,4 @@ window.onload = () => {
     document.querySelector(".preload-wrap").style.display = "none";
    },500)
 }
+
