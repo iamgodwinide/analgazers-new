@@ -192,6 +192,14 @@ area{
   margin-top: 2em;
 }
 
+.overlay{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100000;
+  display: none;
+}
+
 @keyframes pop {
   from{
     transform: scale(0);
